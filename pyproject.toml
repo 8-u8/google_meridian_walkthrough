@@ -1,0 +1,27 @@
+[project]
+name = "google-meridian-walkthrough"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "8-u8", email = "24557402+8-u8@users.noreply.github.com" }
+]
+dependencies = [
+    "google-meridian>=1.0.3",
+    "ipykernel>=6.29.5",
+]
+readme = "README.md"
+requires-python = ">= 3.11"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/google_meridian_walkthrough"]
